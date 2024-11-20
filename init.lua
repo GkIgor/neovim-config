@@ -32,11 +32,6 @@ end
 
 local packer_bootstrap = ensure_packer()
 
--- imports
-require('bufferline').setup {}
-require('telescope').setup {}
-local lspconfig = require('lspconfig')
-
 -- Configuração de plugins
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'    -- Packer em si
@@ -84,7 +79,8 @@ require('packer').startup(function(use)
       }
     end
   }
-  use({ 'projekt0n/github-nvim-theme' })
+  -- use({ 'projekt0n/github-nvim-theme' })
+  use 'navarasu/onedark.nvim'
   use 'rafamadriz/friendly-snippets'
   use {
     'L3MON4D3/LuaSnip',
@@ -149,6 +145,23 @@ require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
+
+-- imports
+require('bufferline').setup {}
+require('telescope').setup {}
+local lspconfig = require('lspconfig')
+local onedark = require('onedark')
+
+
+onedark.setup {
+  style = 'darker',
+  transparent = false,
+  term_colors = true,
+}
+
+onedark.load()
+
+
 
 -- Configurando o Treesitter
 require('nvim-treesitter.configs').setup {
@@ -276,9 +289,9 @@ lspconfig.ts_ls.setup {
 lspconfig.css_variables.setup {
   capabilities = capabilities,
 }
-lspconfig.tailwindcss.setup {
-  capabilities = capabilities,
-}
+--lspconfig.tailwindcss.setup {
+--  capabilities = capabilities,
+--}
 lspconfig.dartls.setup {
   capabilities = capabilities,
 }
