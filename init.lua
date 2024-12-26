@@ -98,6 +98,7 @@ require('packer').startup(function(use)
     config = function()
       local null_ls = require("null-ls")
       null_ls.setup({
+        capabilities = capabilities,
         sources = {
           -- Formatação para C++
           null_ls.builtins.formatting.clang_format,
@@ -126,6 +127,17 @@ require('packer').startup(function(use)
     end
   }
 
+  use {
+    'glepnir/lspsaga.nvim',
+    config = function()
+        require('lspsaga').setup({})
+    end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'} }
+  }
+
+  use 'sheerun/vim-polyglot'
+
+
   -- use 'preservim/nerdtree'
   -- use {
   --   "folke/which-key.nvim",
@@ -146,6 +158,13 @@ require('packer').startup(function(use)
   end
 end)
 
+vim.cmd [[
+  highlight link llvmInstruction Statement
+  highlight link llvmType Type
+  highlight link llvmComment Comment
+]]
+
+
 -- imports
 require('bufferline').setup {}
 require('telescope').setup {}
@@ -160,6 +179,11 @@ onedark.setup {
 }
 
 onedark.load()
+
+
+require('lualine').setup {
+  options = { theme = 'gruvbox' }
+}
 
 
 
@@ -185,6 +209,8 @@ require('nvim-treesitter.configs').setup {
     "sql",
     "typescript",
     "tsx",
+    "llvm",
+    "asm",
   },                             -- Idiomas básicos
   highlight = { enable = true }, -- Ativar highlight
   indent = { enable = true },    -- Melhora a indentação
@@ -225,6 +251,7 @@ cmp.setup({
 -- Configuração adicional pro LSP
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.offsetEncoding = { "utf-8" }
 -- require('lspconfig')['<seu_servidor>'].setup {
 --   capabilities = capabilities,
 -- }
@@ -470,6 +497,10 @@ vim.keymap.set('n', '<leader>fb', require('telescope.builtin').buffers, { desc =
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Ir para definição' })
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Mostrar documentação' })
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Renomear símbolo' })
+
+-- LSP Saga
+vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>', { desc = "Mostrar Tooltip do LSP" })
+
 
 -- NERDTree
 -- Abrir/fechar o NERDTree
