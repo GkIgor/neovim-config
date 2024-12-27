@@ -1,0 +1,1 @@
+Lspconfig.cmake.setup {}
