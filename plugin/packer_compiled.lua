@@ -153,7 +153,7 @@ _G.packer_plugins = {
     url = "https://github.com/rktjmp/lush.nvim"
   },
   ["null-ls.nvim"] = {
-    config = { "\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\vbuffer\0\rcallback\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\vbuffer\0\tdesc\21Formatar cÃ³digo\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimü\1\1\0\6\0\14\0\0216\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\3\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\4=\4\v\0033\4\f\0=\4\r\3B\1\2\1K\0\1\0\14on_attach\0\fsources\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\14on_attach\0\17capabilities\0\fsources\0\nsetup\fnull-ls\frequire\0" },
+    config = { "\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\rcallback\0\vbuffer\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\tdesc\21Formatar cÃ³digo\vbuffer\0\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimü\1\1\0\6\0\14\0\0216\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\3\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\4=\4\v\0033\4\f\0=\4\r\3B\1\2\1K\0\1\0\14on_attach\0\fsources\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\14on_attach\0\17capabilities\0\fsources\0\nsetup\fnull-ls\frequire\0" },
     loaded = true,
     path = "/home/gkigor/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
@@ -248,6 +248,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: null-ls.nvim
+time([[Config for null-ls.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\rcallback\0\vbuffer\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\tdesc\21Formatar cÃ³digo\vbuffer\0\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimü\1\1\0\6\0\14\0\0216\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\3\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\4=\4\v\0033\4\f\0=\4\r\3B\1\2\1K\0\1\0\14on_attach\0\fsources\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\14on_attach\0\17capabilities\0\fsources\0\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
+time([[Config for null-ls.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
@@ -260,10 +264,6 @@ time([[Config for bufresize.nvim]], false)
 time([[Config for LuaSnip]], true)
 try_loadstring("\27LJ\2\nM\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\14lazy_load luasnip.loaders.from_vscode\frequire\0", "config", "LuaSnip")
 time([[Config for LuaSnip]], false)
--- Config for: null-ls.nvim
-time([[Config for null-ls.nvim]], true)
-try_loadstring("\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\vbuffer\0\rcallback\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\vbuffer\0\tdesc\21Formatar cÃ³digo\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimü\1\1\0\6\0\14\0\0216\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\3\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\4=\4\v\0033\4\f\0=\4\r\3B\1\2\1K\0\1\0\14on_attach\0\fsources\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\14on_attach\0\17capabilities\0\fsources\0\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
-time([[Config for null-ls.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")

@@ -21,6 +21,8 @@ local packer_bootstrap = ensure_packer()
 
 -- Configuração de plugins
 require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim'
+
   use "kkharji/sqlite.lua"
 
   use {
@@ -49,7 +51,6 @@ require('packer').startup(function(use)
     -- }
   }
 
-  use 'wbthomason/packer.nvim'
   use 'neovim/nvim-lspconfig'
   use 'nvim-lualine/lualine.nvim'
 
