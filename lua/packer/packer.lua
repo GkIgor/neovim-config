@@ -30,23 +30,23 @@ require('packer').startup(function(use)
     priority = 10000,
     lazy = false,
     -- sqlite is only needed if you want to use frecency sorting
-    dependencies = { 'kkharji/sqlite.lua' },
-    keys = {
-      {
-        '<C-p>',
-        function()
-          require('flash').jump()
-        end
-      },
-      {
-        'S',
-        function()
-          require('flash').jump({ search = { forward = false } })
-        end,
-        mode = { 'n', 'x', 'o' },
-        desc = 'Jump backwards',
-      },
-    }
+    -- dependencies = { 'kkharji/sqlite.lua' },
+    -- keys = {
+    --   {
+    --     '<C-p>',
+    --     function()
+    --       require('flash').jump()
+    --     end
+    --   },
+    --   {
+    --     'S',
+    --     function()
+    --       require('flash').jump({ search = { forward = false } })
+    --     end,
+    --     mode = { 'n', 'x', 'o' },
+    --     desc = 'Jump backwards',
+    --   },
+    -- }
   }
 
   use 'wbthomason/packer.nvim'
@@ -101,9 +101,9 @@ require('packer').startup(function(use)
       }
     end
   }
-
-  -- use({ 'projekt0n/github-nvim-theme' })
-
+  use ({ 'rktjmp/lush.nvim' })
+  use({ 'projekt0n/github-nvim-theme' })
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'navarasu/onedark.nvim'
   use 'rafamadriz/friendly-snippets'
 
@@ -168,7 +168,6 @@ require('packer').startup(function(use)
       require("bufresize").setup()
     end
   }
-
 
   if packer_bootstrap then
     require('packer').sync()
