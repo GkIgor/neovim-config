@@ -1,8 +1,10 @@
 local Menu = require("nui.menu")
 local event = require("nui.utils.autocmd").event
 
+require("lua.plugins.functions.nui_vim.nav.navbar")
+
 local itens = {
-    Menu.item("Novo Arquivo"),
+  Menu.item("Novo Arquivo"),
   Menu.item("Abrir Arquivo"),
   Menu.item("Nova Pasta"),
   Menu.item("Nova Janela"),
