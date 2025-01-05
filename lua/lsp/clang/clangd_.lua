@@ -1,5 +1,5 @@
 Lspconfig.clangd.setup {
-  cmd = { "clangd" },
+  cmd = { "clangd", "--compile-commands-dir=./" },
   on_attach = function(_, bufnr)
     local bufopts = { noremap = true, silent = true, buffer = bufnr }
     -- Ir para a definição do símbolo sob o cursor
