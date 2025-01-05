@@ -49,6 +49,7 @@ local function load_lsp()
     'lsp.python.python_lsp',
     'lsp.rust.rust_lsp',
     'lsp.typescript.ts_lsp',
+    'lsp.lua.lua_lsp',
   }
 
   for _, module in ipairs(modules) do

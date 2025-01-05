@@ -51,6 +51,7 @@ require('packer').startup(function(use)
     -- }
   }
 
+  use 'MunifTanjim/nui.nvim'
   use 'neovim/nvim-lspconfig'
   use 'nvim-lualine/lualine.nvim'
 

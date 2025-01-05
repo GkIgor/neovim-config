@@ -9,6 +9,7 @@ require('plugins.nvim_tree')
 require('plugins.smart_splits')
 require('plugins.snippets_and_lsp')
 require('plugins.treesitter_')
+require('plugins.nui_vim')
 
 require('bufferline').setup {}
 require('telescope').setup {}
