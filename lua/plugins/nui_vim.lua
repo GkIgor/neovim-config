@@ -2,6 +2,10 @@ local Menu = require("nui.menu")
 local event = require("nui.utils.autocmd").event
 
 local itens = {
+    Menu.item("Novo Arquivo"),
+  Menu.item("Abrir Arquivo"),
+  Menu.item("Nova Pasta"),
+  Menu.item("Nova Janela"),
   Menu.item("Copiar"),
   Menu.item("Colar"),
   Menu.item("Salvar"),
