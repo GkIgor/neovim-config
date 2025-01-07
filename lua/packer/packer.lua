@@ -132,6 +132,11 @@ require('packer').startup(function(use)
           null_ls.builtins.formatting.clang_format,
           -- Diagnóstico para C++
           null_ls.builtins.diagnostics.clang_check,
+
+          -- Diagnóstico para Html, Css, Javascript
+          null_ls.builtins.formatting.prettier.with({
+          filetypes = { "html", "css", "typescript", "javascript" }, -- Define os formatos
+        }),
         },
         on_attach = function(client, bufnr)
           -- Atalho pra formatar
