@@ -131,6 +131,11 @@ _G.packer_plugins = {
     path = "/home/gkirxzin/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/gkirxzin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["legendary.nvim"] = {
     loaded = true,
     path = "/home/gkirxzin/.local/share/nvim/site/pack/packer/start/legendary.nvim",
@@ -153,7 +158,7 @@ _G.packer_plugins = {
     url = "https://github.com/rktjmp/lush.nvim"
   },
   ["null-ls.nvim"] = {
-    config = { "\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\vbuffer\0\rcallback\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\vbuffer\0\tdesc\21Formatar cÃ³digo\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimï\2\1\0\t\0\19\1\0306\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\4\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\0049\5\6\0009\5\a\0059\5\v\0059\5\f\0055\a\14\0005\b\r\0=\b\15\aB\5\2\0?\5\0\0=\4\16\0033\4\17\0=\4\18\3B\1\2\1K\0\1\0\14on_attach\0\fsources\14filetypes\1\0\1\14filetypes\0\1\5\0\0\thtml\bcss\15typescript\15javascript\twith\rprettier\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\fsources\0\17capabilities\0\14on_attach\0\nsetup\fnull-ls\frequire\a€€À™\4\0" },
+    config = { "\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\vbuffer\0\rcallback\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\vbuffer\0\tdesc\21Formatar cÃ³digo\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimï\2\1\0\t\0\19\1\0306\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\4\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\0049\5\6\0009\5\a\0059\5\v\0059\5\f\0055\a\14\0005\b\r\0=\b\15\aB\5\2\0?\5\0\0=\4\16\0033\4\17\0=\4\18\3B\1\2\1K\0\1\0\14on_attach\0\fsources\14filetypes\1\0\1\14filetypes\0\1\5\0\0\thtml\bcss\15typescript\15javascript\twith\rprettier\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\17capabilities\0\14on_attach\0\fsources\0\nsetup\fnull-ls\frequire\a€€À™\4\0" },
     loaded = true,
     path = "/home/gkirxzin/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
@@ -248,14 +253,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lspsaga.nvim
-time([[Config for lspsaga.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
-time([[Config for lspsaga.nvim]], false)
--- Config for: null-ls.nvim
-time([[Config for null-ls.nvim]], true)
-try_loadstring("\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\vbuffer\0\rcallback\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\vbuffer\0\tdesc\21Formatar cÃ³digo\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimï\2\1\0\t\0\19\1\0306\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\4\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\0049\5\6\0009\5\a\0059\5\v\0059\5\f\0055\a\14\0005\b\r\0=\b\15\aB\5\2\0?\5\0\0=\4\16\0033\4\17\0=\4\18\3B\1\2\1K\0\1\0\14on_attach\0\fsources\14filetypes\1\0\1\14filetypes\0\1\5\0\0\thtml\bcss\15typescript\15javascript\twith\rprettier\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\fsources\0\17capabilities\0\14on_attach\0\nsetup\fnull-ls\frequire\a€€À™\4\0", "config", "null-ls.nvim")
-time([[Config for null-ls.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
@@ -272,6 +269,14 @@ time([[Config for LuaSnip]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: lspsaga.nvim
+time([[Config for lspsaga.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
+time([[Config for lspsaga.nvim]], false)
+-- Config for: null-ls.nvim
+time([[Config for null-ls.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\2\0\4\0\0066\0\0\0009\0\1\0009\0\2\0009\0\3\0B\0\1\1K\0\1\0\vformat\bbuf\blsp\bvim³\2\1\2\b\0\18\0\0266\2\0\0009\2\1\0029\2\2\2'\4\3\0'\5\4\0006\6\0\0009\6\5\0069\6\6\0069\6\a\0065\a\b\0=\1\t\aB\2\5\0019\2\n\0009\2\v\2\15\0\2\0X\3\t€6\2\0\0009\2\f\0029\2\r\2'\4\14\0005\5\15\0=\1\t\0053\6\16\0=\6\17\5B\2\3\1K\0\1\0\rcallback\0\1\0\2\vbuffer\0\rcallback\0\16BufWritePre\24nvim_create_autocmd\bapi\31documentFormattingProvider\24server_capabilities\vbuffer\1\0\2\vbuffer\0\tdesc\21Formatar cÃ³digo\vformat\bbuf\blsp\14<leader>f\6n\bset\vkeymap\bvimï\2\1\0\t\0\19\1\0306\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0006\4\4\0=\4\5\0034\4\4\0009\5\6\0009\5\a\0059\5\b\5>\5\1\0049\5\6\0009\5\t\0059\5\n\5>\5\2\0049\5\6\0009\5\a\0059\5\v\0059\5\f\0055\a\14\0005\b\r\0=\b\15\aB\5\2\0?\5\0\0=\4\16\0033\4\17\0=\4\18\3B\1\2\1K\0\1\0\14on_attach\0\fsources\14filetypes\1\0\1\14filetypes\0\1\5\0\0\thtml\bcss\15typescript\15javascript\twith\rprettier\16clang_check\16diagnostics\17clang_format\15formatting\rbuiltins\17capabilities\17Capabilities\1\0\3\17capabilities\0\14on_attach\0\fsources\0\nsetup\fnull-ls\frequire\a€€À™\4\0", "config", "null-ls.nvim")
+time([[Config for null-ls.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

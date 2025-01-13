@@ -115,6 +115,7 @@ require('packer').startup(function(use)
     end
   }
 
+  use "lukas-reineke/indent-blankline.nvim"
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'ryanoasis/vim-devicons'

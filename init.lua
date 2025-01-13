@@ -9,7 +9,7 @@ require('plugins.nvim_tree')
 require('plugins.smart_splits')
 require('plugins.snippets_and_lsp')
 require('plugins.treesitter_')
-
+require('plugins.indent_blankline')
 require('bufferline').setup {}
 require('telescope').setup {}
 
